@@ -11,9 +11,9 @@
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crushed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 /*
 
@@ -80,40 +80,36 @@ html {
 /* TODO: Adjust the variables below, create new variables as desired, and delete the variables that you do not want to use. */
 
 :root {
-  --body-typeface: "Inter", sans-serif;
-  --heading-typeface: "Eczar", serif;
-  --project-title-typeface: "Eczar", serif;
-  --background-color: #fdfdfd;
-  --background-color-about: #f5f5f5;
-  --background-color-footer: #f5f5f5;
-  --alt-background-color: #000000;
-  --background-color-holding-page: rgba(82, 0, 255, 0.6);
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
-  --primary-text-color: #222;
-  --holding-page-title-color: #ebedf0;
-  --accent-color: #5200ff;
-  --overlay-color: #5200ff;
-  --overlay-title-color: #ffffff;
-  --overlay-description-color: #ffffff;
-  --hyperlink-color: #5200ff;
-  --hyperlink-alternate-color: orangered;
-  --hover-color: #111;
-  --visited-color: #5200ff;
-  --project-title-color: #5200ff;
-  --project-sidebar-background-color: orangered;
-  --project-sidebar-text-color: white;
+  --body-typeface: "Outfit", sans-serif;
+  --heading-typeface: "Crushed", sans-serif;
+  --project-title-typeface: "Crushed", sans-serif;
+  --background-color: #faf3ed;
+  --background-color-about: #faf3ed;
+  --background-color-footer: #faf3ed;
+  --alt-background-color: white;
+  --background-color-holding-page: #faf3ed;
+  --h1-color: #5d988e;
+  --h2-color: #505051;
+  --h3-color: #505051;
+  --h4-color: #505051;
+  --h5-color: #505051;
+  --h6-color: #505051;
+  --primary-text-color: #505051;
+  --holding-page-title-color: #faf3ed;
+  --accent-color: #5d988e;
+  --overlay-color: #5d988e;
+  --overlay-title-color: #faf3ed;
+  --overlay-description-color: #faf3ed;
+  --hyperlink-color: #5d988e;
+  --hyperlink-alternate-color: teal;
+  --hover-color: #505051;
+  --visited-color: #5d988e;
+  --project-title-color: #5d988e;
+  --project-sidebar-background-color: #faf3ed;
+  --project-sidebar-text-color: #505051;
   --heart-color: darkred;
-  --holding-page-footer-color: #f8f8ff;
-  --text-selection-background-color: #5200ff;
-  --linear-gradient-color-1: #ff057c;
-  --linear-gradient-color-2: #8d0b93;
-  --linear-gradient-color-3: #321575;
-  --stroke-shadow-color: rgba(0, 0, 0, 0.4);
+  --holding-page-footer-color: #faf3ed;
+  --text-selection-background-color: #5d988e;
 }
 
 body {
@@ -124,6 +120,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+
 
 /* The ::selection CSS pseudo-element applies styles to the part of a document that has been highlighted by the user (such as clicking and dragging the mouse across text). */
 
@@ -161,7 +159,6 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
