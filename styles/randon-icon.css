@@ -1,0 +1,28 @@
+#random-logo-container {
+	height: 200px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Logo Image Array */
+.logo-version-1 {
+	background-image: url("../assets/branding-images/cassie-vp-brand-heart.svg");
+}
+
+.logo-version-2 {
+	background-image: url("../assets/branding-images/cassie-vp-brand-flower.svg");
+}
+
+.logo-version-3 {
+	background-image: url("../assets/branding-images/cassie-vp-brand-orbit.svg");
+}
+
+.logo-version-4 {
+	background-image: url("../assets/branding-images/cassie-vp-brand-squiggle.svg");
+}
+.logo-version-5 {
+	background-image: url("../assets/branding-images/cassie-vp-brand-heartbeat.svg");
+}
