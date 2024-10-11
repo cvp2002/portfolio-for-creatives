@@ -41,3 +41,5 @@ function randomImage(element) {
 			: randomImageClasses[randomImage];
 	el.className = chosenImage;
 }
+
+  

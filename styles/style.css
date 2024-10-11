@@ -55,8 +55,6 @@ No media query for `xs` since this is the default in Bootstrap
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
-  /* TODO: Change the url above to add a custom cursor. Delete the line above if you want to use the default browser cursor. */
 }
 
 *,
@@ -327,6 +325,39 @@ a:active {
   align-items: flex-start;
 }
 
+.hamburger .line {
+  width: 50px;
+  height: 4px;
+  background-color: #1e1e1e;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hamburger:hover{
+  cursor: pointer;
+}
+
+#hamburger.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger.is-active .line:nth-child(1){
+  -webkit-transform: translateY(13px) rotate(45deg);
+  -ms-transform: translateY(13px) rotate(45deg);
+  -o-transform: translateY(13px) rotate(45deg);
+  transform: translateY(11px) rotate(45deg);
+}
+
+#hamburger.is-active .line:nth-child(3){
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+  -ms-transform: translateY(-13px) rotate(-45deg);
+  -o-transform: translateY(-13px) rotate(-45deg);
+  transform: translateY(-13px) rotate(-45deg);
+}
+
 .project-navigation {
   display: flex;
   gap: 5rem;
@@ -368,10 +399,6 @@ a:active {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
-}
-
-.hero-header{
-
 }
 
 #random-logo-container {

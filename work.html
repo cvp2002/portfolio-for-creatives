@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <script src="https://kit.fontawesome.com/d300c2ea15.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="js/javascript.js"></script>
+    <script src="js/icon-hover.js"></script>
+    <script src="js/hamburger-transition.js"></script>
   </head>
 
   <body class="work-page">
@@ -24,7 +25,11 @@
             </a>
           </li>
           <li>
-            <a href="about.html" class="custom-navigation">About</a>
+            <div class="hamburger" id="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
           </li>
         </ul>
       </header>
@@ -32,7 +37,7 @@
         <h1>CASSIE VP</h1>
         <h3>Graphic designer, interactive designer, illustrator, logo designer</h3>
       </div>
-      <a href="javascript:void(0);" onclick="randomImage(this)" onmouseover="randomImage(this)" id="logo-1">
+      <a href="icon-hover:void(0);" onclick="randomImage(this)" onmouseover="randomImage(this)" id="logo-1">
         <div id="random-logo-container" class="logo-version-1">
         </div>
       </a>
