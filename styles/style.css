@@ -98,10 +98,9 @@ html {
   --overlay-color: #1e1e1e;
   --overlay-title-color: #faf3ed;
   --overlay-description-color: #faf3ed;
-  --hyperlink-color: #faf3ed;
+  --hyperlink-color: #1e1e1e;
   --hyperlink-alternate-color: black;
   --hover-color: #5d988e;
-  --visited-color: #faf3ed;
   --project-title-color: #1e1e1e;
   --project-sidebar-background-color: #faf3ed;
   --project-sidebar-text-color: #1E1E1E;
@@ -221,11 +220,18 @@ em {
   color: var(--overlay-description-color);
 }
 
+.light-link {
+  color:var(--background-color)
+}
 /* Hyperlink Styles */
 
 a:link {
   color: var(--hyperlink-color);
   text-decoration: none;
+}
+
+a.light-link {
+  color: #faf3ed;
 }
 
 a:visited {
@@ -321,41 +327,27 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2rem;
-  align-items: flex-start;
+  padding: 0.5rem;
 }
 
-.hamburger .line {
-  width: 50px;
-  height: 4px;
-  background-color: #1e1e1e;
-  display: block;
-  margin: 8px auto;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+.menu-wrapper {
+  padding: 0.5rem 2rem;
 }
 
-.hamburger:hover{
-  cursor: pointer;
+.menu {
+  padding: 0.25rem;
+  gap: 4rem;
+  display: flex;
+  flex-direction: row;
 }
 
-#hamburger.is-active .line:nth-child(2){
-  opacity: 0;
+.menu-item {
+  padding: 0.5rem;
+  margin: 0.5rem;
 }
 
-#hamburger.is-active .line:nth-child(1){
-  -webkit-transform: translateY(13px) rotate(45deg);
-  -ms-transform: translateY(13px) rotate(45deg);
-  -o-transform: translateY(13px) rotate(45deg);
-  transform: translateY(11px) rotate(45deg);
-}
-
-#hamburger.is-active .line:nth-child(3){
-  -webkit-transform: translateY(-13px) rotate(-45deg);
-  -ms-transform: translateY(-13px) rotate(-45deg);
-  -o-transform: translateY(-13px) rotate(-45deg);
-  transform: translateY(-13px) rotate(-45deg);
+.navigation-font {
+  color: 1e1e1e;
 }
 
 .project-navigation {
@@ -363,7 +355,7 @@ a:active {
   gap: 5rem;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 1.25rem 3rem;
   align-items: flex-start;
   background-color: #1e1e1e
 }
