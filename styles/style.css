@@ -350,6 +350,15 @@ a:active {
   color: 1e1e1e;
 }
 
+.arrow-navigation {
+  display: flex;
+  gap: 5rem;
+  flex-direction: row;
+  justify-content: start;
+  padding: 2rem 3rem 1.25rem 3rem;
+  align-items: flex-start;
+}
+
 .project-navigation {
   display: flex;
   gap: 5rem;
