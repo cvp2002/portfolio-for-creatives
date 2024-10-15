@@ -471,12 +471,11 @@ a:active {
   opacity: 0;
   transition: 0.75s ease;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: left;
   flex-direction: column;
-  padding: 1rem;
-  background-color: var(--overlay-color);
-  transition: opacity 0.3s, visibility 0.3s;
+  padding: 4rem;
+  background-image: linear-gradient(rgba(30,30,30,0), rgba(30,30,30,1) 90%);
 }
 
 .work-page-grid-item:hover .overlay {
@@ -554,7 +553,8 @@ a:active {
 
 .footer-item-3 {
   grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  grid-row: 4 / 5;
+  justify-self: end;
 }
 
 .footer-item-4 {
@@ -565,6 +565,43 @@ a:active {
 .awards-list {
   margin-bottom: 2rem;
 }
+
+.footer-navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-item {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+/* Change Color Hover */
+
+.wordmark-wrapper {
+  width: 40%;
+}
+
+.wordmark {
+  fill: #faf3ed;
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.empty {
+  fill: none;
+}
+
+.wordmark:hover {
+  fill: var(--accent-color);
+}
+
 
 /* Project Page 
 
