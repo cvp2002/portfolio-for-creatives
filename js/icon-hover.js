@@ -42,4 +42,3 @@ function randomImage(element) {
 	el.className = chosenImage;
 }
 
-  
