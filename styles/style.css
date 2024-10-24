@@ -386,6 +386,11 @@ a:active {
   margin: 0.5rem;
 }
 
+.header-socials-list {
+  display: flex;
+  flex-direction: row;
+}
+
 .navigation-font {
   color: #1e1e1e;
 }
