@@ -305,7 +305,7 @@ a:active {
 
 .fa-brands {
   color: var(--h1-color);
-  width: 4rem;
+  font-weight: 400;
 }
 
 .list-item {
