@@ -305,7 +305,7 @@ a:active {
 
 .fa-brands {
   color: var(--h1-color);
-  size: 3rem;
+  width: 4rem;
 }
 
 .list-item {
@@ -840,7 +840,7 @@ a:active {
   }
 
   .logo {
-    width: 5rem;
+    width: 7rem;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
