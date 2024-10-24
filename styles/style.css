@@ -11,7 +11,7 @@
 /* TODO: Delete the Google Fonts below and add the Google Fonts you want to use on your site. Each Google font that you load will slightly increase the download speed of your site so make sure to only included necessary fonts here. */
 
 @import url("https://fonts.googleapis.com/css2?family=Hepta+Slab|Staatliches&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
@@ -79,7 +79,7 @@ html {
 
 :root {
   --body-typeface: "Roboto", sans-serif;
-  --heading-typeface: "Anybody", sans-serif;
+  --heading-typeface: "Kalnia", serif;
   --project-title-typeface: "Roboto", sans-serif;
   --background-color: #faf3ed;
   --background-color-about: #faf3ed;
@@ -289,7 +289,6 @@ a:active {
   line-height: 1.3;
 }
 .socials-list {
-  width: 30rem;
   background: lightblue;
   display: flex;
   flex-direction: row;
@@ -305,7 +304,8 @@ a:active {
 }
 
 .fa-brands {
-  color: #faf3ed;
+  color: var(--h1-color);
+  size: 3rem;
 }
 
 .list-item {
@@ -331,16 +331,43 @@ a:active {
 */
 
 .hero {
+  right: 0;
+  width: 100%;
   min-height: 80vh;
   display: flex;
   flex-direction: column;
+  z-index: 2;
+}
+
+.hero-header {
+  z-index: 1000;
+}
+
+.hero-headline {
+  position: relative;
+  z-index: 10;
+  font-size: 7.5rem;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
 }
 
 .branding-navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 1rem 3rem;
+  align-items: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+  align-items: center;
 }
 
 .menu-wrapper {
@@ -363,6 +390,15 @@ a:active {
   color: #1e1e1e;
 }
 
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+}
+
 .arrow-navigation {
   display: flex;
   gap: 5rem;
@@ -370,16 +406,6 @@ a:active {
   justify-content: start;
   padding: 2rem 3rem 1.25rem 3rem;
   align-items: flex-start;
-}
-
-.project-navigation {
-  display: flex;
-  gap: 5rem;
-  flex-direction: row;
-  justify-content: center;
-  padding: 2rem 3rem 1.25rem 3rem;
-  align-items: flex-start;
-  background-color: #1e1e1e;
 }
 
 .logo {
@@ -390,15 +416,10 @@ a:active {
 .hero-headline-wrapper {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  align-items: start;
+  flex: 0.7;
+  align-items: center;
   justify-content: center;
-  margin: 10rem 3rem 0rem 3rem;
-  text-align: left;
-}
-
-.hero-icon {
-  font-size: 4rem;
+  text-align: center;
 }
 
 .hero-footer {
@@ -419,73 +440,13 @@ a:active {
   padding: 1rem;
 }
 
-#random-logo-container {
-  height: 300px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-/* Logo Image Array */
-.logo-version-1 {
-  background-image: url("../assets/branding-images/cassie-vp-brand-heart.svg");
-}
-
-.logo-version-2 {
-  background-image: url("../assets/branding-images/cassie-vp-brand-flower.svg");
-}
-
-.logo-version-3 {
-  background-image: url("../assets/branding-images/cassie-vp-brand-orbit.svg");
-}
-
-.logo-version-4 {
-  background-image: url("../assets/branding-images/cassie-vp-brand-squiggle.svg");
-}
-.logo-version-5 {
-  background-image: url("../assets/branding-images/cassie-vp-brand-heartbeat.svg");
-}
-
-.circle {
-  height: 15px;
-  width: 15px;
-  background-color: #EEE3D9;
-  border-radius: 50%;
-}
-
-.icon-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0rem 3rem;
-}
-.icon-row-2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0rem 5rem;
-}
-
 .overlapped-text{
   position: absolute;
   top: 50%; 
-  left: 28%; 
+  left: 50%; 
   transform: translate(-50%, -70%);
 }
 
-.project-nav-overlap {
-  transform: translate(0%, -1%);
-}
-
-.overlap-hero-navigation{
-  display: flex;
-  flex-direction: row;
-  transform: translate(0%, -20%);
-}
 /* Work Page Layout
 
 ██     ██  ██████  ██████  ██   ██     ██████   █████   ██████  ███████ 
@@ -858,7 +819,7 @@ a:active {
   /* TODO: Add or adjust styles here for large devices. */
 
   .holding-page-title {
-    font-size: 2rem;
+    font-size: 10rem;
   }
 
   h1 {
