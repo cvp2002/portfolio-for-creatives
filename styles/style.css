@@ -609,7 +609,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
-  min-height: 50vh;
+  min-height: 35vh;
   background: var(--background-color-footer);
   padding: 1rem;
 }
@@ -633,6 +633,7 @@ a:active {
 .footer-item-4 {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
+  margin-bottom: 2rem;
 }
 
 .awards-list {
