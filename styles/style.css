@@ -515,7 +515,9 @@ a:active {
 
 .work-container {
   display: flex;
-  justify-content: left;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 80%;
   gap: 5rem;
   margin: 0 auto;
   text-decoration: none;
@@ -547,7 +549,7 @@ a:active {
 }
 
 .caption {
- margin-bottom: 5rem;
+ margin-bottom: 3rem;
 }
 
 .work-box:hover img {
@@ -672,6 +674,12 @@ a:active {
 
 .wordmark:hover {
   fill: var(--accent-color);
+}
+
+.footer-bottom-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Project Page 
