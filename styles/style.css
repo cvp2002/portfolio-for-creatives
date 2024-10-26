@@ -222,6 +222,10 @@ em {
 .light-link {
   color: var(--background-color);
 }
+
+.light-link:hover {
+  color: var(--hover-color);
+}
 /* Hyperlink Styles */
 
 a:link {
@@ -305,6 +309,10 @@ a:active {
   color: var(--h1-color);
 }
 
+.fa-brands:hover {
+  color:var(--hover-color)
+}
+
 .list-item {
   line-height: 1.3;
   list-style-type: disc;
@@ -364,10 +372,6 @@ a:active {
   justify-content: space-between;
   gap: 3rem;
   align-items: center;
-}
-
-.menu-wrapper {
-  padding: 0.5rem 2rem;
 }
 
 .menu {
@@ -655,26 +659,6 @@ a:active {
 .social-item {
   padding: 0.5rem;
   margin: 0.5rem;
-}
-
-/* Change Color Hover */
-
-.wordmark-wrapper {
-  width: 40%;
-}
-
-.wordmark {
-  fill: #faf3ed;
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
-}
-
-.empty {
-  fill: none;
-}
-
-.wordmark:hover {
-  fill: var(--accent-color);
 }
 
 .footer-bottom-wrap {
