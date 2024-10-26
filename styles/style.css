@@ -313,7 +313,7 @@ a:active {
 
 .project-description {
   font-size: 1.225rem;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 1rem;
 }
 
@@ -698,6 +698,53 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
 }
+
+.project-image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 0 auto;
+  margin: 3rem 11rem;
+}
+
+.project-image-wrapper img{
+  display: flex;
+  border-radius: 1rem;
+  min-height: 75vh;
+  object-fit: cover;
+}
+
+.half-project-image {
+  position: relative;
+  width: 695px;
+  justify-content: space-between;
+}
+
+.half-project-image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.half-project-image img{
+  width: 695px;
+  min-height: 550px;
+  display: block;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.project-caption {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 9rem 0rem 9rem 0rem;
+  gap: 13rem;
+}
+
 
 /* Sidebar */
 .project-aside {
