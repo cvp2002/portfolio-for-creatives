@@ -419,9 +419,8 @@ a:active {
   display: flex;
   gap: 5rem;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   padding: 2rem 3rem 1.25rem 3rem;
-  align-items: flex-start;
 }
 
 .logo {
