@@ -359,7 +359,7 @@ a:active {
 .hero-headline {
   position: relative;
   z-index: 10;
-  font-size: 7.5rem;
+  font-size: 6.5rem;
 }
 
 .video-background {
@@ -547,11 +547,11 @@ a:active {
   flex-wrap: wrap;
   justify-content: center;
   min-width: 80%;
-  gap: 2rem;
+  gap: 4rem;
   padding: 2rem;
   text-decoration: none;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 .work-box {
@@ -560,8 +560,8 @@ a:active {
   }
 
 .work-box img {
-  max-width: 675px;
-  height: 500px;
+  max-width: 600px;
+  height: 425px;
   display: block;
   transition: transform 0.5s;
   border-radius: 1rem;
@@ -947,7 +947,7 @@ a:active {
   }
 
   .hero {
-    min-height: 70vh;
+    min-height: 75vh;
     margin-bottom: 2.5%;
   }
 
