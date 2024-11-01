@@ -618,6 +618,14 @@ a:active {
   grid-row: 4 / 5;
 }
 
+.about-image {
+  transform: rotate(-5deg) translate(5%, -10%) scale(0.9);
+}
+
+.about-image img {
+  border-radius: 1rem;
+}
+
 /* Global Footer
 
 ███████  ██████   ██████  ████████ ███████ ██████  
@@ -983,7 +991,7 @@ a:active {
 
   .about {
     padding: 4rem;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .global-footer {
