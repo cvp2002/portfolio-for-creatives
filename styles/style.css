@@ -81,31 +81,31 @@ html {
   --body-typeface: "Roboto", sans-serif;
   --heading-typeface: "Kalnia", serif;
   --project-title-typeface: "Roboto", sans-serif;
-  --background-color: #faf3ed;
-  --background-color-about: #faf3ed;
+  --background-color: #F8F6E9;
+  --background-color-about: #F8F6E9;
   --background-color-footer: #1e1e1e;
   --alt-background-color: white;
-  --background-color-holding-page: #faf3ed;
+  --background-color-holding-page: #F8F6E9;
   --h1-color: #1e1e1e;
   --h2-color: #1e1e1e;
   --h3-color: #1e1e1e;
-  --h4-color: #faf3ed;
+  --h4-color: #F8F6E9;
   --h5-color: #1e1e1e;
   --h6-color: #1e1e1e;
   --primary-text-color: #1e1e1e;
-  --holding-page-title-color: #faf3ed;
+  --holding-page-title-color: #F8F6E9;
   --accent-color: transparent;
   --overlay-color: #1e1e1e;
-  --overlay-title-color: #faf3ed;
-  --overlay-description-color: #faf3ed;
+  --overlay-title-color: #F8F6E9;
+  --overlay-description-color: #F8F6E9;
   --hyperlink-color: #1e1e1e;
   --hyperlink-alternate-color: black;
   --hover-color: #5d988e;
   --project-title-color: #1e1e1e;
-  --project-sidebar-background-color: #faf3ed;
+  --project-sidebar-background-color: #F8F6E9;
   --project-sidebar-text-color: #1e1e1e;
   --heart-color: darkred;
-  --holding-page-footer-color: #faf3ed;
+  --holding-page-footer-color: #F8F6E9;
   --text-selection-background-color: #5d988e;
 }
 
@@ -377,7 +377,7 @@ a:active {
   left: 0;
   width: 100%;
   height: 85vh;
-  background: linear-gradient( rgba(250,243,237,0) 60%, rgba(250,243,237,1) 87%);
+  background: linear-gradient( rgba(248,246,233,0) 60%, rgba(248,246,233,1) 87%);
 }
 
 .text {
