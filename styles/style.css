@@ -1115,7 +1115,7 @@ a:active {
 }
 
 /* Footer adjustments for mobile */
-@media (max-width: 815px) {
+@media (max-width: 819px) {
   .global-footer {
       display: flex;
       flex-direction: column;
