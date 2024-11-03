@@ -1128,6 +1128,7 @@ a:active {
   .footer-item-1, .footer-item-2, .footer-item-3, .footer-item-4 {
       width: 100%;
       margin: 0;
+      margin-bottom: 8%;
       padding: 0.5rem 0;
       justify-content: left;
   }
