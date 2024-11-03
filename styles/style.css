@@ -941,7 +941,7 @@ a:active {
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 820px) {
+@media (min-width: 850px) {
   /* TODO: Add or adjust styles here for large devices. */
 
   .holding-page-title {
@@ -1115,7 +1115,7 @@ a:active {
 }
 
 /* Footer adjustments for mobile */
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .global-footer {
       display: flex;
       flex-direction: column;
