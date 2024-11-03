@@ -941,7 +941,7 @@ a:active {
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 850px) {
+@media (min-width: 820px) {
   /* TODO: Add or adjust styles here for large devices. */
 
   .holding-page-title {
