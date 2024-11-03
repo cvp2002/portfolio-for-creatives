@@ -941,7 +941,7 @@ a:active {
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) {
+@media (min-width: 850px) {
   /* TODO: Add or adjust styles here for large devices. */
 
   .holding-page-title {
@@ -982,6 +982,7 @@ a:active {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 3rem;
     padding: 4rem;
+    justify-content: center;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -1002,6 +1003,7 @@ a:active {
   .global-footer {
     padding: 4rem 4rem 0 4rem;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
   }
 
   .about-item-1 {
