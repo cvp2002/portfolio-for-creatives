@@ -1130,14 +1130,20 @@ a:active {
       justify-content: left;
   }
 
+  .footer-item-1 {
+     margin-left: 5%;
+  }
+
   .footer-navigation {
       flex-wrap: wrap;
       justify-content: left;
+      margin: 5%;
   }
 
   .footer-bottom-wrap {
       max-width: 100%;
       justify-content: space-between;
+      margin: 5%;
   }
 
   .socials-list {
@@ -1145,4 +1151,5 @@ a:active {
       justify-content: left;
       width: 100%;
   }
+  
 }
