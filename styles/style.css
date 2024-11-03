@@ -168,7 +168,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: 1.325rem;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
@@ -445,8 +445,7 @@ a:active {
 }
 
 .logo {
-  width: 3rem;
-  justify-content: center;
+  width: 5rem;
   /* TODO: Adjust the width of the logo on mobile devices here. */
 }
 
@@ -518,7 +517,8 @@ a:active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
-  padding: 4rem;
+  padding: 3rem;
+  justify-content: center;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
 
@@ -960,8 +960,13 @@ a:active {
     font-size: 1.88rem;
   }
 
+  h4 {
+    font-size: 2.25rem;
+  }
+
   .logo {
     width: 7rem;
+    margin: 0.5rem;
     /* TODO: Adjust the width of the logo on large devices here. */
   }
 
@@ -976,6 +981,7 @@ a:active {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 3rem;
+    padding: 4rem;
   }
 
   /* Grayscale filter with full-colour on hover and tap */
@@ -1103,5 +1109,40 @@ a:active {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  }
+}
+
+/* Footer adjustments for mobile */
+@media (max-width: 768px) {
+  .global-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem; /* Adjust as needed */
+      text-align: left;
+  }
+
+  /* Ensure each footer item is full-width on mobile */
+  .footer-item-1, .footer-item-2, .footer-item-3, .footer-item-4 {
+      width: 100%;
+      margin: 0;
+      padding: 0.5rem 0;
+      justify-content: left;
+  }
+
+  .footer-navigation {
+      flex-wrap: wrap;
+      justify-content: left;
+  }
+
+  .footer-bottom-wrap {
+      max-width: 100%;
+      justify-content: space-between;
+  }
+
+  .socials-list {
+      flex-wrap: wrap;
+      justify-content: left;
+      width: 100%;
   }
 }
