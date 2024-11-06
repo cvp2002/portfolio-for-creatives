@@ -154,21 +154,21 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 2rem;
   font-weight: 500;
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
 
 h3 {
-  font-size: 1.325rem;
+  font-size: 1.15rem;
   margin-bottom: 1rem;
   line-height: 1.3;
   color: var(--h3-color);
 }
 
 h4 {
-  font-size: 1.325rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
@@ -377,7 +377,7 @@ a:active {
   left: 0;
   width: 100%;
   height: 85vh;
-  background: linear-gradient( rgba(248,246,233,0) 60%, rgba(248,246,233,1) 87%);
+  background: linear-gradient( rgba(248,246,233,0) 60%, rgba(248,246,233,1) 85%);
 }
 
 .text {
@@ -500,6 +500,7 @@ a:active {
 
 .work {
   z-index: 3;
+  margin-bottom: -8%;
 }
 
 .work-wrapper {
@@ -516,8 +517,7 @@ a:active {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 1rem;
-  padding: 3rem;
+  padding: 5%;
   justify-content: center;
   /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
 }
@@ -529,6 +529,7 @@ a:active {
   width: 100%;
   height: auto;
   position: relative;
+  text-align: center;
   /* Required to contain overlay size */
 }
 
@@ -559,24 +560,58 @@ a:active {
   opacity: 0.8;
 }
 
+.circle-wrapper {
+  width: 70%; /* Adjust based on image size and desired ring thickness */
+  height: auto; /* Same as width for a perfect circle */
+  padding: 3.5%; /* Creates space between the image and the ring */
+  border-radius: 50%; /* Keeps the wrapper circular */
+  border: 10px solid #d2dedd; /* Blue ring around the wrapper */
+  display: inline-flex; /* Centers image inside the wrapper */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.circle-wrapper-2 {
+  width: 85%; /* Adjust based on image size and desired ring thickness */
+  height: auto; /* Same as width for a perfect circle */
+  padding: 4%; /* Creates space between the image and the ring */
+  border-radius: 50%; /* Keeps the wrapper circular */
+  border: 10px solid #d2dedd; /* Blue ring around the wrapper */
+  display: inline-flex; /* Centers image inside the wrapper */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
 .project-container {
   display: flex;
   margin-bottom: 2rem;
 }
 
-.project-container img{
- border-radius: 1rem;
+.circle-wrapper img{
+ border-radius: 50%;
  transition: transform 0.5s;
  object-fit: cover;
+ width: 100%;
+ height: auto;
 }
 
-.project-container:hover img{
-  transform: scale(1.05);
+.circle-wrapper-2 img{
+  border-radius: 50%;
+  transition: transform 0.5s;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
  }
 
-.caption {
- margin-bottom: 5%;
-}
+.circle-wrapper:hover img{
+  transform: scale(1.13);
+ }
+
+ .circle-wrapper-2:hover img{
+  transform: scale(1.115);
+ }
 
 .work-box:hover img {
   transform: scale(1.03);
@@ -639,10 +674,19 @@ a:active {
                                                    
 */
 
+.global-footer-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2%;
+  min-height: 40vh;
+  background: var(--background-color-footer);
+  padding: 1rem;
+}
+
 .global-footer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 3%;
+  grid-gap: 2%;
   min-height: 40vh;
   background: var(--background-color-footer);
   padding: 1rem;
@@ -717,8 +761,7 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 0 auto;
-  margin: 3rem 11rem;
+  margin: 2% 8%;
 }
 
 .project-image-wrapper img{
@@ -731,7 +774,7 @@ a:active {
 
 .half-project-image {
   position: relative;
-  width: 695px;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -739,13 +782,12 @@ a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 3rem;
+  gap: 3%;
 }
 
 .half-project-image img{
-  width: 695px;
-  min-height: 550px;
-  display: block;
+  width: 100%;
+  min-height: auto;
   border-radius: 1rem;
   object-fit: cover;
 }
@@ -755,8 +797,8 @@ a:active {
   text-align: left;
   flex-direction: row;
   justify-content: space-between;
-  margin: 9rem 0rem 9rem 0rem;
-  gap: 13rem;
+  margin: 9% 0rem;
+  gap: 18%;
 }
 
 
@@ -941,7 +983,7 @@ a:active {
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 820px) {
+@media (min-width: 913px) {
   /* TODO: Add or adjust styles here for large devices. */
 
   .holding-page-title {
@@ -980,8 +1022,6 @@ a:active {
 
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap: 3rem;
-    padding: 4rem;
     justify-content: center;
   }
 
@@ -998,6 +1038,12 @@ a:active {
   .about {
     padding: 4rem;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .global-footer-hero {
+    padding: 4% 4% 0 4%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
   }
 
   .global-footer {
@@ -1092,11 +1138,34 @@ a:active {
   .arrow {
     padding-right: 1rem;
   }
+
+  .project-image-wrapper img {
+    min-height: auto;
+    width: 100%;
+  }
+
+  .work {
+    transform: translate(0,-7%);
+  }
+
+  .img-2 {
+    transform: translate(-5%,0);
+    margin-top: 18%;
+  }
+
+  .img-3 {
+    transform: translate(10%,-28%);
+  }
+
+  .img-4 {
+    margin-top: 5%;
+  }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
   /* TODO: Add styles here for X-large devices. */
 
   .grid {
@@ -1114,8 +1183,53 @@ a:active {
   }
 }
 
+@media (max-width: 1024px) and (min-width: 668px) {
+
+  .img-2 {
+    transform: translate(-5%,0);
+    margin-top: 18%;
+  }
+
+  .img-3 {
+    transform: translate(10%,-28%);
+  }
+
+  .img-4 {
+    margin-top: 5%;
+  }
+
+  .work {
+    transform: translate(0,-25%);
+  }
+
+  .project-image-wrapper img {
+    min-height: auto;
+    width: 100%;
+  }
+
+  .global-footer-hero {
+    margin-top: -25%;
+  }
+}
+ 
 /* Footer adjustments for mobile */
-@media (max-width: 819px) {
+@media (max-width: 667px) {
+  .overlay-hero {
+    height: 85vh;
+  }
+
+  .work {
+    margin: 5%;
+  }
+
+  .global-footer-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; /* Adjust as needed */
+    text-align: left;
+}
+
   .global-footer {
       display: flex;
       flex-direction: column;
@@ -1154,4 +1268,50 @@ a:active {
       justify-content: left;
       width: 100%;
   }
+
+  .project-image-wrapper {
+    margin: 5%;
+}
+
+.half-project-image-container {
+    flex-direction: column;
+    gap: 0;
+}
+
+.half-project-image {
+    width: 100%;
+}
+.project-image-wrapper img {
+  min-height: auto;
+  width: 100%;
+}
+
+.project-caption {
+  flex-direction: column;
+  margin: 0rem 0rem 2rem;
+  gap: 0;
+}
+
+.project-title {
+  font-size: 2rem;
+}
+
+.project-description {
+  font-size: 1rem;
+}
+
+.arrow-navigation {
+  padding: 1% 5%;
+  gap: 0;
+  margin-top: 15%;
+}
+
+.circle-wrapper, .circle-wrapper-2{
+  width: 100%;
+  height: auto;
+}
+
+.work {
+  transform: translate(0,-5%);
+}
 }
