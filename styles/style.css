@@ -283,11 +283,11 @@ a:active {
   color:var(--hover-color)
 }
 
-.fa-solid {
+.fa-dark {
   color: #1e1e1e;
 }
 
-.fa-solid:hover {
+.fa-dark:hover {
   color: var(--hover-color);
 }
 
