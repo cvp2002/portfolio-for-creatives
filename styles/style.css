@@ -220,6 +220,10 @@ a:link {
   text-decoration: none;
 }
 
+a:visited {
+  color: var(--hyperlink-color); /* Choose the color you want */
+}
+
 
 .light-link {
   color: #f0eee0;
