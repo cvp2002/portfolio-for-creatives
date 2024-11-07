@@ -210,10 +210,6 @@ em {
   margin-bottom: 1rem;
 }
 
-.light-link {
-  color: var(--background-color);
-}
-
 .light-link:hover {
   color: var(--hover-color);
 }
@@ -224,12 +220,13 @@ a:link {
   text-decoration: none;
 }
 
-a.light-link {
-  color: #faf3ed;
+
+.light-link {
+  color: #f0eee0;
 }
 
-a:visited {
-  color: var(--visited-color);
+a.light-link {
+  color: #f0eee0;
 }
 
 a:hover {
@@ -274,15 +271,7 @@ a:active {
 }
 
 .fa-brands {
-  color: var(--h1-color);
-}
-
-.fa-brands-footer {
-  color: var(--background-color);
-}
-
-.fa-brands-footer:hover {
-  color: var(--hover-color);
+  color: #f0eee0;
 }
 
 .fa-brands:hover {
