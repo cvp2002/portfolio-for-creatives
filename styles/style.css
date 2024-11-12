@@ -772,6 +772,16 @@ a:active {
   margin-bottom: 3rem;
 }
 
+.project-image-wrapper iframe {
+  display: flex;
+  border-radius: 1rem;  /* Apply the same border-radius */
+  min-height: 55vh;      /* Ensure it has the same minimum height */
+  object-fit: cover;     /* Ensure the video covers the area without distortion */
+  margin-bottom: 3rem;   /* Keeps consistent margin as for images */
+  width: 100%;           /* Make iframe responsive */
+  height: 100%;
+}
+
 .half-project-image {
   position: relative;
   width: 100%;
@@ -1140,6 +1150,11 @@ a:active {
     width: 100%;
   }
 
+  .project-image-wrapper iframe {
+    min-height: auto;
+    width: 100%;
+  }
+
   .work {
     transform: translate(0,-5%);
   }
@@ -1225,6 +1240,11 @@ a:active {
   }
 
   .project-image-wrapper img {
+    min-height: auto;
+    width: 100%;
+  }
+
+  .project-image-wrapper iframe {
     min-height: auto;
     width: 100%;
   }
@@ -1317,8 +1337,14 @@ a:active {
 .half-project-image {
     width: 100%;
 }
+
 .project-image-wrapper img {
   min-height: auto;
+  width: 100%;
+}
+
+.project-image-wrapper iframe {
+  min-height: 35vh;
   width: 100%;
 }
 
