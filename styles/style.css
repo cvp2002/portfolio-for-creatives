@@ -1172,6 +1172,10 @@ a:active {
     margin-top: 5%;
   }
 
+  .img-5 {
+    transform: translate(5%, -25%);
+  }
+
   .circle-wrapper-about {
     width: 135%;
     height: auto;
@@ -1235,6 +1239,10 @@ a:active {
     margin-top: 5%;
   }
 
+  .img-5 {
+    transform: translate(20%, -25%);
+  }
+  
   .work {
     transform: translate(0,-8%);
   }
